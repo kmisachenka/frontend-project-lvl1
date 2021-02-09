@@ -1,4 +1,4 @@
-name: CI/CD
+name: Continuous Integration
 
 on:
   push:
@@ -17,4 +17,4 @@ jobs:
         with:
           node-version: '14'
       - run: make install
-      - run: make test
+      - run: make lint
